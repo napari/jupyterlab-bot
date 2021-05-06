@@ -1,8 +1,8 @@
-# Jupyterlab Bot Service
+# Napari Bot Service
 
-This application is freely hosted on [Heroku](https://dashboard.heroku.com/apps/jupyterlab-bot).
+This application is freely hosted on [Heroku](https://dashboard.heroku.com/apps/napari-bot).
 
-The application can be fount at [this endpoint](https://jupyterlab-bot.herokuapp.com/).
+The application can be fount at [this endpoint](https://napari-bot.herokuapp.com/).
 
 This application is heavily inspired by [Conda Forge](https://github.com/conda-forge/conda-forge-webservices/).
 
@@ -16,7 +16,7 @@ This application is heavily inspired by [Conda Forge](https://github.com/conda-f
 
 Install a [webhook](https://docs.github.com/en/developers/webhooks-and-events/creating-webhooks) on your repo:
 
-* Payload URL: `https://jupyterlab-bot.herokuapp.com/hooks/github`
+* Payload URL: `https://napari-bot.herokuapp.com/hooks/github`
 * Content Type: `application/json`
 * Select `Let me select invidual events`
 * Select `Pull requests` and `Pushes`
@@ -28,8 +28,8 @@ Install a [webhook](https://docs.github.com/en/developers/webhooks-and-events/cr
 ### Installation
 
 ```bash
-conda create --name jupyterlab-bot python>=3.6 pygithub tornado --channel conda-forge
-conda activate jupyterlab-bot
+conda create --name napari-bot python>=3.6 pygithub tornado --channel conda-forge
+conda activate napari-bot
 pip install -e .
 ```
 
@@ -60,13 +60,13 @@ heroku container:login
 If creating, run:
 
 ```bash
-heroku create jupyterlab-bot
+heroku create napari-bot
 ```
 
 Otherwise, run:
 
 ```bash
-heroku git:remote -a jupyterlab-bot
+heroku git:remote -a napari-bot
 ```
 
 Then run:
